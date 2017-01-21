@@ -1,9 +1,8 @@
-
 /* Functions for creating all units */
-New basicHarvest([spawn]
+function basicHarvester(spawn){
 
-	Game.spawns[spawn].createCreep( [WORK, CARRY, MOVE]);
+	Game.spawns[spawn].createCreep( [WORK, CARRY, MOVE], {Role:'harvester'});
 
-)
+}
 
-module.exports = unitSpawns;
+module.exports = basicHarvester;
