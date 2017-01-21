@@ -1,4 +1,5 @@
-/* behavior for harvester units*/
+/* behavior for harvester units
+TODO figure out a way to harvest different nodes.*/
 
 var roleHarvester = {
 

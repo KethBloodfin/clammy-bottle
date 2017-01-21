@@ -1,3 +1,5 @@
+/* TODO figure out how to make roads automatically*/
+
 var roleUpgrader = {
 
     /** @param {Creep} creep **/

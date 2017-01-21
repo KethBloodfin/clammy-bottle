@@ -1,8 +1,17 @@
 /* Functions for creating all units */
-function basicHarvester(spawn){
+function spawnUnit (type, spawn){
 
-	Game.spawns[spawn].createCreep( [WORK, CARRY, MOVE], {Role:'harvester'});
-
+	if (type == 'harvester') {
+	    Game.spawns[spawn].createCreep([WORK, CARRY, MOVE], {role:'harvester'});
+	}
+	
+	if (type == 'upgrader') {
+	    Game.spawns[spawn].createCreep([WORK, CARRY, MOVE], {role:'upgrader'});
+	}
+	
+	if (type == 'builder') {
+	    Game.spawns[spawn].createCreep([WORK, CARRY, MOVE], {role:'builder'});
+	}
 }
 
-module.exports = basicHarvester;
+module.exports = spawnUnit;
