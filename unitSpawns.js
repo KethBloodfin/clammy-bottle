@@ -6,4 +6,4 @@ New basicHarvest([spawn]
 
 )
 
-module.exports = unitSpawns
+module.exports = unitSpawns;
